@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  --primary-green: #007019;
+  --secondary-green: #EAF1EB;
+  --cv-dark: #1C3329;
+  --cv-dark-deep: #152821;
+  --gray-dark: #AAAAAA;
+  --gray-light: #F9F9F9;
+  --gray-mid: #EEEEEE;
+  --border: #e5e7eb;
+}
+
+@theme inline {
+  --color-primary-green: var(--primary-green);
+  --color-secondary-green: var(--secondary-green);
+  --color-cv-dark: var(--cv-dark);
+  --color-cv-dark-deep: var(--cv-dark-deep);
+  --color-gray-dark: var(--gray-dark);
+  --color-gray-light: var(--gray-light);
+  --color-gray-mid: var(--gray-mid);
+  --color-border: var(--border);
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: #ffffff;
+  color: #171717;
+  font-family: 'Inter', sans-serif;
+}
+
+/* CrossVal table styles */
+.cv-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cv-table thead th {
+  padding: 10px 16px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  background: #F9F9F9;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.cv-table tbody td {
+  padding: 10px 16px;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #f3f4f6;
+  vertical-align: middle;
+}
+
+.cv-table tbody tr:hover {
+  background: #F9F9F9;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+::-webkit-scrollbar-thumb {
+  background: #AAAAAA;
+  border-radius: 4px;
+}
